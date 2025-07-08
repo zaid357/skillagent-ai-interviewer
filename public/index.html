@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Interviewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>SkillAgent - Your AI Interviewer</h1>
+
+  <select id="level">
+    <option value="beginner">Beginner</option>
+    <option value="intermediate">Intermediate</option>
+    <option value="advanced">Advanced</option>
+  </select>
+
+  <button id="askQuestion">🎙️ Start Interview</button>
+  <p id="question">Click start to begin.</p>
+
+  <button id="recordBtn">🎤 Record Answer</button>
+  <p id="spokenText">Your answer will appear here.</p>
+
+  <div id="editor" style="height: 300px; border: 1px solid #ccc;"></div>
+
+  <button id="submitBtn">Submit Interview</button>
+
+  <script src="https://unpkg.com/monaco-editor@0.34.1/min/vs/loader.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
